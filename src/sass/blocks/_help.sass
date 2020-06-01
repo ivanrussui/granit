@@ -1,0 +1,34 @@
+.help
+  background-color: $border-color
+  &__title
+    padding-top: 80px
+    margin-top: 0
+    margin-bottom: 60px
+    text-align: center
+    text-transform: uppercase
+    +bold
+  &-block
+    display: flex
+    justify-content: space-around
+    padding-bottom: 80px
+    &__card
+      text-align: center
+      border: 2px solid $back-color
+      margin-right: 20px
+      cursor: pointer
+      &:nth-child(3)
+        margin-right: 0
+      &:hover
+        background-color: $back-color
+    &__image1
+      padding: 52px 24px 36px 24px
+    &__image2
+      padding: 58px 51px 26px 20px
+    &__image3
+      padding: 47px 49px 26px 62px
+    &__title
+      margin-bottom: 39px
+      font-size: 17px
+      +bold
+      &:hover
+        text-decoration: underline

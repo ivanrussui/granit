@@ -1,0 +1,55 @@
+.popularity
+  &__title
+    margin-top: 80px
+    margin-bottom: 60px
+    text-align: center
+    text-transform: uppercase
+    +bold
+  &-block
+    display: flex
+    justify-content: space-around
+    margin-bottom: 80px
+    &__card
+      text-align: center
+      border: 2px solid $border-color
+      margin-right: 20px
+      &:nth-child(4)
+        margin-right: 0
+      &:nth-child(3)
+        .popularity-block__subtitle
+          margin-bottom: 7px
+    &__image
+      padding: 20px 20px 22px 20px
+    &__subtitle
+      margin-bottom: 24px
+      display: block
+      font-size: 15px
+      cursor: pointer
+      +reg
+      &:hover
+        text-decoration: underline
+    &__money
+      font-size: 17px
+      +bold
+    &__money1
+      color: $trait-color
+      vertical-align: text-top
+      text-decoration: line-through
+      font-size: 12px
+      +reg
+    &__money2
+      color: $stock-color
+      font-size: 17px
+      +bold
+
+  &__button
+    margin-top: 25px
+    padding: 19px 66px
+    font-size: 14px
+    background-color: $main-color
+    border: none
+    cursor: pointer
+    margin-bottom: 36px
+    +bold
+    &:hover
+      text-decoration: underline
