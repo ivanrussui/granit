@@ -1,5 +1,54 @@
 .contacts
-  background: url('../img/contacts/contacts-bg.jpg')
-  &__title
-    // margin-top: 40px
-    margin: 50px 44px 23px 88px
+	background: url('../img/contacts/contacts-bg.png') no-repeat
+	&-field
+		display: flex
+		justify-content: space-between
+		max-height: 520px
+	&__image
+		padding: 227px 0 251px 120px
+	&-block
+		background-color: $back-color
+		margin: 80px 489px 76px 412px
+	&__title
+		margin: 0
+		padding: 60px 173px 53px 61px
+		text-transform: uppercase
+		+bold
+	&__phone
+		padding-left: 60px
+		&-img
+			display: inline-block
+		&-text
+			display: block
+			margin-left: 34px
+			margin-top: -20px
+			text-transform: uppercase
+			text-decoration: none
+			color: $text-color
+			cursor: pointer
+			+bold
+			&:hover
+				text-decoration: underline
+  &__location
+    padding: 39px 0 40px 60px
+    &-img
+      display: inline-block
+    &-text
+      display: block
+      margin-top: -22px
+      margin-left: 32px
+      font-size: 18px
+  &__mail
+    padding: 0 0 56px 59px
+    &-img
+      display: inline-block
+    &-text
+      display: block
+      margin-top: -20px
+      margin-left: 33px
+      font-size: 18px
+      &:hover
+        text-decoration: underline
+        cursor: pointer
+
+				// СТИЛИ ПРИМЕНЯТЮСЯ ДОБАВЛЯЯ КЛАССЫ PHOONE К КЛАССАМ LOCATION И MAIL, ПЕРЕПЕАТАЙ ЭТИ КЛАССЫ В САСС ПОТОМУ ЧТО СТИРАЕШЬ ИЗ ЦСС И ВСЕ ПО ПИЗДЕ КОГА ЗАНОВО

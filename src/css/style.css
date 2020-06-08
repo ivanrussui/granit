@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -24,14 +25,22 @@
 }
 
 .navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 30px;
 }
 
 .navbar__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar__firm {
@@ -51,14 +60,25 @@
 }
 
 .navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbar__contacts {
+.navbar__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-right: 30px;
 }
 
@@ -91,8 +111,11 @@
 
 .menu-block {
   background-color: #ffcc00;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 25px;
   margin-top: 30px;
   font-family: 'Gotham Pro Bold', sans-serif;
@@ -173,8 +196,11 @@
 }
 
 .price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 80px;
 }
 
@@ -256,8 +282,11 @@
 }
 
 .advantages-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 80px;
 }
 
@@ -340,8 +369,11 @@
 }
 
 .popularity-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 80px;
 }
 
@@ -429,8 +461,11 @@
 }
 
 .help-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 80px;
 }
 
@@ -471,4 +506,177 @@
   text-decoration: underline;
   cursor: pointer;
 }
-/*# sourceMappingURL=style.css.map */
+
+.contacts {
+  background: url("../img/contacts/contacts-bg.png") no-repeat;
+}
+
+.contacts-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 520px;
+}
+
+.contacts__image {
+  padding: 227px 0 251px 120px;
+}
+
+.contacts-block {
+  background-color: #ffffff;
+  margin: 80px 489px 76px 412px;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 60px 173px 53px 61px;
+  text-transform: uppercase;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts__phone {
+  padding-left: 60px;
+}
+
+.contacts__phone-img {
+  display: inline-block;
+}
+
+.contacts__phone-text {
+  display: block;
+  margin-left: 34px;
+  margin-top: -20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #292929;
+  cursor: pointer;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts__phone-text:hover {
+  text-decoration: underline;
+}
+
+.contacts__location {
+  padding: 39px 0 40px 60px;
+}
+
+.contacts__location-img {
+  display: inline-block;
+}
+
+.contacts__location-text {
+  display: block;
+  margin-top: -22px;
+  margin-left: 32px;
+  font-size: 18px;
+}
+
+.contacts__mail {
+  padding: 0 0 56px 59px;
+}
+
+.contacts__mail-img {
+  display: inline-block;
+}
+
+.contacts__mail-text {
+  display: block;
+  margin-top: -20px;
+  margin-left: 33px;
+  font-size: 18px;
+}
+
+.contacts__mail-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer {
+  background: #292929;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  color: #ffffff;
+}
+
+.footer__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__firm {
+  margin-left: 13px;
+}
+
+.footer__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-weight: 700;
+}
+
+.footer__subtitle {
+  display: block;
+  font-family: 'Gotham Pro Light', sans-serif;
+  font-weight: 300;
+}
+
+.footer__year {
+  margin-top: 54px;
+  margin-left: -50px;
+  font-size: 12px;
+  margin-bottom: 43px;
+  font-family: 'Gotham Pro Light', sans-serif;
+  font-weight: 300;
+}
+
+.footer__logo {
+  margin-bottom: 111px;
+}
+
+.footer__info {
+  text-align: end;
+}
+
+.footer__phone {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-weight: 700;
+}
+
+.footer__adress {
+  font-family: 'Gotham Pro Light', sans-serif;
+  font-weight: 300;
+}
+
+.footer__button {
+  margin-top: 30px;
+  padding: 14px 24px;
+  color: #ffffff;
+  background-color: #292929;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  text-decoration: underline;
+}
