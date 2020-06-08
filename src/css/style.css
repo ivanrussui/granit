@@ -446,6 +446,16 @@
   text-decoration: underline;
 }
 
+.stock {
+  position: relative;
+  left: -53px;
+  top: -191px;
+}
+
+.stock__subtitle {
+  margin-top: -68px;
+}
+
 .help {
   background-color: #f6f6f6;
 }
