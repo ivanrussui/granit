@@ -762,6 +762,30 @@
   }
 }
 
+@media (max-width: 576px) {
+  .contacts-block {
+    margin: 80px 13px 158px 0;
+  }
+  .contacts__image {
+    margin: 5px 17px 3px 13px;
+    padding: 227px 0 251px 0;
+  }
+  .contacts__title {
+    padding: 24px 57px 47px 28px;
+    font-size: 20px;
+  }
+  .contacts__phone, .contacts__location, .contacts__mail {
+    padding-left: 10px;
+  }
+  .contacts__phone-text, .contacts__location-text, .contacts__mail-text {
+    font-size: 14px;
+    margin-left: 18px;
+  }
+  .contacts__mail-text {
+    margin-top: -16px;
+  }
+}
+
 .footer {
   background: #292929;
 }
@@ -855,6 +879,6 @@
     font-size: 13px;
   }
   .footer__phone {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 }
