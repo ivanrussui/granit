@@ -143,6 +143,34 @@
   }
 }
 
+@media (max-width: 576px) {
+  .navbar__brand {
+    margin-bottom: 20px;
+  }
+  .navbar-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 45px;
+    margin-top: 15px;
+  }
+  .navbar__contact {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .navbar__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar__button {
+    margin-top: 10px;
+    padding: 10px 40px;
+  }
+  .navbar__subtitle {
+    display: none;
+  }
+}
+
 .menu {
   z-index: 5;
   position: relative;
@@ -187,7 +215,7 @@
     top: 0px;
     width: 30px;
     height: 2px;
-    background-color: indigo;
+    background-color: #ffcc00;
     border: none;
   }
   .menu-button::before {
@@ -198,7 +226,7 @@
     top: 0;
     width: 30px;
     height: 2px;
-    background-color: indigo;
+    background-color: #ffcc00;
     margin-top: 7px;
     border: none;
   }
@@ -210,9 +238,36 @@
     top: 0;
     width: 30px;
     height: 2px;
-    background-color: indigo;
+    background-color: #ffcc00;
     margin-top: 14px;
     border: none;
+  }
+  .menu-block {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ffcc00;
+    max-width: 350px;
+    padding: 5px;
+  }
+  .menu-block-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__elements {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 60px;
+    margin: 0;
+    font-size: 13px;
+    width: 200px;
   }
 }
 
@@ -287,6 +342,17 @@
     background-position: center;
     background-color: #292929;
     opacity: 0.95;
+  }
+  .main__button {
+    display: block;
+    margin-bottom: 35px;
+    margin-top: 40px;
+  }
+  .main-offer {
+    padding-bottom: 50px;
+  }
+  .main-offer__choice {
+    margin-left: 5px;
   }
 }
 
@@ -921,5 +987,26 @@
   }
   .footer__phone {
     margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-block {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    padding: 0;
+  }
+  .footer__info {
+    text-align: left;
+  }
+  .footer__button {
+    margin-top: 15px;
+    padding: 10px 40px;
+  }
+  .footer__contact {
+    margin-top: 30px;
+  }
+  .footer__brand {
+    margin-top: 30px;
   }
 }
